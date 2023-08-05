@@ -12,24 +12,45 @@
 
     <!-- header top -->
 
-    <header class="bg-[#113121] py-7">
+    <header class="bg-[#113121] pt-7">
         <div class="container mx-auto columns-2">
-            <img src="../img/logo.svg" class="py-1" alt="">
-            <div class="flex justify-end">
+            <img src="../img/logo.svg" class="pt-2 alt="">
+            <div class="flex justify-end max-md:hidden">
                 <a href="#" class="bg-primary-color rounded-full px-2 py-1 mr-5 shadow-primary-color shadow-3xl hover:shadow-slate-400"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <a href="#" class="bg-primary-color rounded-full px-2 py-1 mr-4 shadow-primary-color shadow-3xl hover:shadow-slate-400"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#" class="bg-primary-color rounded-full px-2 py-1 mr-5 shadow-primary-color shadow-3xl hover:shadow-slate-400"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="#" class="bg-primary-color rounded-md px-3 py-1 shadow-primary-color shadow-3xl hover:shadow-slate-400">Buy on OpenSea</a>
             </div>
         </div>
+
+        <div class="container mx-auto border-t-1 mt-8">
+            <div class="slide-container">
+                <div class="slide-one relative">
+                    <div class="img " data-relative-input="true" id="monkyeOne">
+                        <img data-depth="0.2" src="../img/header.png" alt="" class="object-contain object-center px-16 absolute order-1" >
+                    </div>
+                    
+                    <p class=" w-96 text-white absolute right-0 top-16 text-lg">Meet the notorious Creakzers - the creatures from your dreams and nightmares, and quite possibly from under your bed… Don’t look down!</p>
+                    <h1 class=" text-5.4xl font-bold text-white w-1/2 absolute bottom-10 max-md:text-4xl max-sm:text-2xl max-sm:relative max-sm:top-10">The New Vaporvawe Creakzers NFT Collection Showcase & Store</h1>
+                </div>
+            </div>
+        </div>
     </header>
+    <footer>
+        <p class="text-white text-lg text-center py-1">all rights reserved</p>
+    </footer>
 
 
 
 
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('monkyeOne');
+        var parallaxInstance = new Parallax(scene, {
+        relativeInput: true
+        });
+    </script>
 
 
 </body>
