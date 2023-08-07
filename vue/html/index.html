@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailWind & Vue</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body class="h-full grid place-items-center bg-[url('../image/vue-bg-one.png')]">
+    
+
+    
+
+    <main id="app" class="container bg-[url('../image/vue-bg-two.png')] w-full  h-full">
+
+        <div class="px-40 py-40">
+            
+            <!-- <input type="text" v-model="greeting" ><br>
+            {{ greeting }}({{ greeting.length }}) -->
+
+
+            <button v-bind:class="active? 'text-black': 'text-white'" v-on:click="toggle" class="p-4 bg-sky-950 font-bold rounded-md shadow-2xl">Click here</button>
+
+        </div>
+        
+    </main>
+
+
+
+    <script>
+
+        Vue.createApp({
+            data() {
+                return {
+                    greeting: 'I am Munna Vau',
+                    // textW: 'text-white'
+                    active: false
+                };
+            },
+
+            mounted() {
+                setTimeout(() => {
+                    this.greeting = 'Changed';
+                },3000);
+
+            },
+            methods: {
+                toggle() {
+                    // this.textW = 'text-sky-950 bg-black'
+                    this.active = !this.active
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>
