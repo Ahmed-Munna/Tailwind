@@ -568,86 +568,20 @@ video {
   }
 }
 
-.m-auto {
-  margin: auto;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.-mt-16 {
-  margin-top: -4rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mr-24 {
-  margin-right: 6rem;
-}
-
-.ml-24 {
-  margin-left: 6rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
-.-ml-14 {
-  margin-left: -3.5rem;
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .ml-14 {
   margin-left: 3.5rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .flex {
@@ -656,18 +590,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-1\/2 {
-  height: 50%;
 }
 
 .h-2\/3 {
@@ -682,24 +604,8 @@ video {
   height: 1rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-3 {
-  width: 0.75rem;
+.h-full {
+  height: 100%;
 }
 
 .w-2\/3 {
@@ -714,10 +620,8 @@ video {
   width: 1rem;
 }
 
-.appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+.w-full {
+  width: 100%;
 }
 
 .grid-cols-2 {
@@ -736,16 +640,16 @@ video {
   gap: 2rem;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .border {
@@ -767,14 +671,14 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-sky-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(8 47 73 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-slate-800 {
@@ -782,9 +686,9 @@ video {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/image\/vue-bg-one\.png\'\)\] {
@@ -795,44 +699,12 @@ video {
   background-image: url('../image/vue-bg-two.png');
 }
 
-.bg-center {
-  background-position: center;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-20 {
-  padding: 5rem;
-}
-
 .p-10 {
   padding: 2.5rem;
 }
 
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-
-.py-40 {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .px-3 {
@@ -840,32 +712,24 @@ video {
   padding-right: 0.75rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.align-middle {
-  vertical-align: middle;
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -886,6 +750,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
 .text-sky-950 {
   --tw-text-opacity: 1;
   color: rgb(8 47 73 / var(--tw-text-opacity));
@@ -896,25 +765,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -924,9 +777,8 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.checked\:bg-blue-500:checked {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .focus\:ring-2:focus {
@@ -940,11 +792,6 @@ video {
   --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
 
-.peer\/draft:checked ~ .peer-checked\/draft\:text-sky-500 {
-  --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
-}
-
 @media (prefers-color-scheme: dark) {
   .dark\:border-gray-600 {
     --tw-border-opacity: 1;
@@ -954,20 +801,6 @@ video {
   .dark\:border-gray-700 {
     --tw-border-opacity: 1;
     border-color: rgb(55 65 81 / var(--tw-border-opacity));
-  }
-
-  .dark\:bg-gray-700 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-gray-300 {
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219 / var(--tw-text-opacity));
-  }
-
-  .dark\:ring-offset-gray-800 {
-    --tw-ring-offset-color: #1f2937;
   }
 
   .dark\:focus\:ring-blue-600:focus {

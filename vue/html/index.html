@@ -34,44 +34,38 @@
 
         <div class="h-2/3 w-2/3 bg-slate-800 font-bold rounded-lg shadow-2xl grid grid-cols-2 gap-8">
             <div class="bg-white h-3/4 w-3/4 mt-16 ml-14 rounded-lg shadow-2xl p-10 ">
-                <h1 class="font-bold text-2xl mb-3 ">Assignment</h1>
-                <ul v-for="assignment in assignments">
+                <h1 class="font-bold text-2xl mb-3 ">Progress List</h1>
+                <ul v-for="assignment in assignments.filter(a => !a.complete)" v-bind:key="assignment.id">
                     <li class="bg-slate-800 text-white px-3 shadow-lg flex items-center border border-gray-200 rounded dark:border-gray-700">
-                        <input v-model="compleate" v-bind:id="assignment.id" type="checkbox" value="" name="bordered-checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2 dark:border-gray-600">
-                        <label v-bing:for="assignment.id" class="w-full py-4 ml-2 text-sm font-medium">{{assignment.name}}</label>
+                        <input v-model="assignment.complete" v-bind:id="assignment.id" type="checkbox" value="" name="bordered-checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2 dark:border-gray-600">
+                        <label v-bind:for="assignment.id" class="w-full py-4 ml-2 text-sm font-medium">{{assignment.name}}</label>
                     </li>
                 </ul>
             </div>
             <div class="bg-white h-3/4 w-3/4 mt-16 ml-14 rounded-lg shadow-2xl p-10 ">
-                <h1 class="font-bold text-2xl mb-3 ">Assignment</h1>
-                <ul>
+                <h1 class="font-bold text-2xl mb-3 ">Complete List</h1>
+                <ul v-for="assignment in assignments.filter(a => a.complete)" v-bind:key="assignment.id">
                     <li class="bg-slate-800 text-white px-3 shadow-lg flex items-center border border-gray-200 rounded dark:border-gray-700">
-                        <input id="bordered-checkbox-5" type="checkbox" value="" name="bordered-checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2 dark:border-gray-600">
-                        <label for="bordered-checkbox-5" class="w-full py-4 ml-2 text-sm font-medium">Default radio</label>
+                        <input v-model="assignment.complete" v-bind:id="assignment.id" type="checkbox" value="" name="bordered-checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2 dark:border-gray-600">
+                        <label v-bind:for="assignment.id" class="w-full py-4 ml-2 text-sm font-medium">{{assignment.name}}</label>
                     </li>
                 </ul>
             </div>
         </div>
-
-        
-    <pre>
-        {{assignments}}
-    </pre>
-
     </main>
 
 
     <script>
-
+        
         let app = {
 
             data() {
                  return {
                     assignments: [
-                        {name: 'Finish Project', compleate: false, id:1},
-                        {name: 'Read Chapter 4', compleate: false, id:2},
-                        {name: 'Turn in homework', compleate: false, id:3},
-                        {name: 'Test Complete', compleate: false, id:4},
+                        {name: 'Finish Project', complete: false, id:1},
+                        {name: 'Read Chapter 4', complete: false, id:2},
+                        {name: 'Turn in homework', complete: false, id:3},
+                        {name: 'Test Complete', complete: false, id:4},
                     ]
                  };
             }
@@ -80,8 +74,6 @@
         };
 
         Vue.createApp(app).mount('#app');
-
-
 
 
         // Vue.createApp({
